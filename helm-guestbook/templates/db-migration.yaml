@@ -3,7 +3,7 @@ kind: Job
 metadata:
   name: db-migration-job
   annotations:
-    argocd.argoproj.io/hook: PreSyn
+    argocd.argoproj.io/hook: PreSync
     argocd.argoproj.io/hook-delete-policy: BeforeHookCreation,HookSucceeded
 spec:
   backoffLimit: 2
